@@ -10,9 +10,11 @@
             background-image: url('bg.webp');
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
             margin: 0;
             padding: 0;
             color: #fff;
+            background-color: #333;
         }
         header {
             font-size: 20px;
@@ -49,7 +51,7 @@
         a.button {
             display: block;
             width: fit-content;
-            margin: 30px auto 60px;
+            margin: 30px auto 20px;
             padding: 10px 20px;
             background-color: #7289da;
             color: #fff;
@@ -57,6 +59,7 @@
             font-weight: bold;
             border-radius: 5px;
             font-family: 'Arial', sans-serif;
+            white-space: nowrap;
         }
         a.button:hover {
             background-color: #5b6eae;
@@ -65,16 +68,9 @@
             background-color: rgba(35, 35, 35, 0.9);
             padding: 20px;
             border-radius: 10px;
-            margin-top: 5px;
+            margin-top: 75px;
             display: flex;
             justify-content: space-between;
-            color: #fff;
-        }
-        .description {
-            background-color: rgba(35, 35, 35, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-
             color: #fff;
         }
         .feature {
@@ -91,6 +87,37 @@
             border-radius: 10px;
             margin-top: 20px;
         }
+    
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+                background-size: auto 100%;
+                background-position: top;
+            }
+            header {
+                padding: 10px 20px;
+            }
+            .header-text {
+                margin-top: 0;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .feature {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .feature img {
+                width: 80px;
+            }
+            .description {
+                padding: 20px 10px;
+            }
+            a.button {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,8 +129,8 @@
     </header>
     <main>
         <div class="description">
-                <h2>What is AllyUp?</h2>
-                <p>We utilise the platform Discord and then enhance it with advanced bot integations and an unstoppable community power. Embark on us with a journey teeming with exclusive events and curated content creators. We are here to help you transcend from the ordinary and embrace the extraordinary.</p>
+            <h2>What is AllyUp?</h2>
+            <p>We utilise the platform Discord and then enhance it with advanced bot integations and an unstoppable community power. Embark on us with a journey teeming with exclusive events and curated content creators. We are here to help you transcend from the ordinary and embrace the extraordinary.</p>
         </div>
         <a href="https://discord.gg/JxMqmXWZTW" class="button">Join Discord</a>
         <div class="features">
