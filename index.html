@@ -88,24 +88,32 @@
         }
     
         /* Mobile responsiveness */
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 768px) {
             body {
                 font-size: 14px;
                 background-size: cover;
                 background-position: center;
             }
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 10px;
+                padding: 10px;
+            }
+
             .description {
                 font-size: 17px;
             }
             .header-text {
                 margin-top: 0;
             }
+            
             h2 {
                 font-size: 20px;
             }
             .feature {
-                width: 100%; /* Set the width to full width */
-                margin-bottom: 20px; /* Add some bottom margin between features */
+                width: 100%;
+                margin-bottom: 20px;
             }
             .feature img {
                 width: 70px;
